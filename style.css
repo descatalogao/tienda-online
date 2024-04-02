@@ -1,0 +1,313 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    padding: 20px 5%;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0,0.3);
+}
+/* imagen del fondo */
+.bgimage{
+    background-image:
+    linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.6)),
+    url(https://images.unsplash.com/photo-1621967390503-e3cd1f6b27fa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-blend-mode:normal;
+
+}
+
+/* container del logo, con su respectivo diseño */
+.logo img{
+    transform: translateY(3px) translateX(10px);
+    height: 40px;
+}
+.logo p{
+    transform: translateY(-37px) translateX(60px);
+    width: 100px;
+    border-radius: 5px;
+    border-bottom: 4px solid rgb(238, 152, 53);
+}
+.logo{
+    display: block;
+    padding: 3px 0;
+    height: 40px;
+    min-width: 190px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    font-style: italic;
+    text-shadow: 7px 2px rgb(191, 152, 152);
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+
+
+/* buscador */
+
+.container{
+    width: fit-content;
+    height: fit-content;
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbar{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 5px 20px;
+    backdrop-filter: blur(1px) saturate(140%);
+}
+.searchbar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 5px 20px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+::placeholder{
+    color:rgb(74, 74, 74);
+}
+
+.searchbar button{
+    border: 0;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background:  rgb(244, 203, 157);
+    cursor: pointer;
+}
+
+/* menú */
+
+.menu{
+    width: fit-content;
+    display: flex;
+}
+.menu li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    list-style: none;
+    border: 1.5px solid rgb(238, 152, 53);
+    border-radius: 50%;
+}
+.navbutton {
+    padding: 5px;
+    text-align: center;
+    font-size: 23.5px;
+    color:black;
+    text-decoration: none;
+}
+
+.menu li:hover{
+    background-color: rgb(238, 152, 53);
+    cursor:pointer;
+}
+
+/* hero */
+.fahero{
+    display: flex;
+    justify-content: space-between;
+}
+.whyus{
+    backdrop-filter: blur(2px) saturate(2);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    color: rgb(50, 50, 50);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.whyus span{
+    color: rgb(180, 121, 32);
+    font-style: italic;
+    font-weight: bold;
+}
+.whyus h2{
+    border-bottom: 4px solid rgb(222, 147, 34);
+}
+.whyus h3{
+    font-style: italic;
+    font-weight: 300;
+}
+.whyus p{
+    padding: 5px 0;
+}
+.hero{
+    max-height: 400px;
+    width: fit-content;
+    position: relative;
+    text-align: center;
+    color: white;
+    /* transform: translateX(-150px); */
+}
+.hero h1{
+    width: 90%;
+    font-size: 32px;
+    font-family: 'Roboto';
+    z-index: 5;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero img{
+    border-radius: 15px;
+    height: 400px;
+    filter:contrast(0.4);
+    object-fit: cover;
+}
+
+/* tienda */
+
+.fashop{
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.6)),
+    url(https://plus.unsplash.com/premium_photo-1661897325546-5747eef13150?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 50% 5%;
+}
+.shop{
+    justify-items: center;
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+ .shoptitle{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    font-family: 'Roboto';
+    text-align: center;
+ }
+ .shoptitle p{
+    width: fit-content;
+    border-bottom: 4px solid rgb(222, 147, 34);
+ }
+ .card{
+    padding: 20px 0;
+    height: 270px;
+    font-family: 'Roboto';
+    text-align: center;
+    width: 300px;
+    border-radius: 9px;
+    box-shadow: 0 0 9px rgba(0, 0, 0,0.3);
+ }
+ .shop a{
+    color: rgb(23, 23, 23);
+    text-decoration: none;
+ }
+ .cdtitle{
+    font-weight: 600;
+ }
+ .cdtitle span{
+    color: rgb(237, 144, 37);
+ }
+ .card img{
+    cursor: pointer;
+    margin-top: 15px;
+    width: 250px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 15px;
+ }
+ .price{
+    margin-top: 10px;
+    font-size: large;
+    font-weight: 400;
+    color: rgb(87, 87, 87);
+ }
+ .buy{
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: none;
+    padding: 7px 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(222, 147, 34);
+ }
+
+ /* footer */
+
+footer{
+    margin-top: 20px;
+    height: 10vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: rgb(210, 210, 210);
+    background-color: rgb(40, 40, 40);
+}
+footer h3{
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+footer span{
+    font-weight: bold;
+    color: rgb(255, 177, 81);
+    cursor: pointer;
+}
+
+
+/* media queries */
+@media screen and (max-width: 860px){
+    .fahero>.whyus{
+        display: none;
+    }
+    .hero{
+        width: 100%;
+    }
+    .hero img{
+        width: 100%;
+        border-radius: 15px;
+    }
+    .container{
+        display: none;
+    }
+    header{
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+
+    @media screen and (max-width: 300px){
+        .shop{
+            grid-template-columns: 1fr;
+        }
+        .card{
+            height: fit-content;
+            width: 90vw;
+        }
+        .card img{
+            width:60lvw;
+        }
+    }
